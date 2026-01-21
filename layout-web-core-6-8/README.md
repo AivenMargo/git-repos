@@ -1,0 +1,1 @@
+https://aivenmargo.github.io/git-repos/layout-web-core-6-8/
