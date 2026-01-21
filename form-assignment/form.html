@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div class="login-window">
+      <div class="item image-side">
+        <img src="./img/bg.jpg" alt="Iito picture" /><img
+          class="logo-img"
+          src="./img/logo.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="item">
+        <div class="wrapper">
+          <h1>Get iinto it today</h1>
+          <div>There is no charge or obligation upon registration</div>
+          <div class="social-buttons">
+            <button type="submit" class="facebook-button">
+              <img
+                src="/form-assignment/img/facebook.svg"
+                alt="facebook-logo"
+              />
+              Register with Facebook
+            </button>
+            <button type="submit" class="linkedin-button">
+              <img
+                src="/form-assignment/img/linkedin.svg"
+                alt="linkedin-logo"
+              />
+              Register with Linkedin
+            </button>
+          </div>
+          <div class="divider">OR</div>
+          <div class="reg-inputs">
+            <div class="field">
+                <label>Email</label>
+              <input
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="field">
+                <label>Phone</label>
+              <input
+                type="tel"
+                id="tel"
+                required
+              />
+            </div>
+          </div>
+          <h2>What type of investor are you?</h2>
+          <div>Select the type of investor you are below</div>
+          <div class="radio-group">
+            <div>
+              <input type="radio" id="individual" />
+              <label class="radio-item" for="individuaL">Individual</label>
+            </div>
+            <div>
+              <input type="radio" id="business" />
+              <label class="radio-item" for="business">Business</label>
+            </div>
+            <div>
+              <input type="radio" id="ira" />
+              <label class="radio-item" for="ira">IRA</label>
+            </div>
+            <div>
+              <input type="radio" id="trust" />
+              <label class="radio-item" for="trust">Trust</label>
+            </div>
+          </div>
+          <div class="terms">
+            <input type="radio" id="agreement" />
+            <label for="agreement"
+              >I agree to the terms and receiving notifications from iinto
+              <a href="https://www.google.com">View full terms</a></label
+            >
+          </div>
+          <div>
+            <button type="submit" class="create-account-button">
+              Create Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
