@@ -1,0 +1,173 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("./assets/TTLakes/TTLakes-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("./assets/TTLakes/TTLakes-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.mobile-menu{
+    width: 320px;
+    height: 1024px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+}
+
+.menu-header{
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header__left-group{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.menu-header__right-group{
+    display: flex;
+}
+
+.menu-header__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 42px;
+}
+
+.mobile-menu__main-content{
+    flex: 1;
+}
+
+.service-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list__element{
+    position: relative;
+    padding: 16px 0px 16px 24px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "TTLakes",Arial, sans-serif;
+    font-weight: 500;
+    color: #1B1C21;
+}
+
+.service-list__element--active{
+    position: relative;
+    color: #7E7E82;
+    
+}
+
+.service-list__element--active::before{
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transform: translateY(-50%);
+}
+
+.mobile-menu__contact-info{
+    padding: 24px;
+}
+
+.button-group{
+    display: flex;
+    gap: 16px;
+}
+
+.button-group__element{
+    display: flex;
+    width: 40px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu__mail{
+    padding: 16px 0px 6px 0px;
+    font-size: 16px;
+    font-family: "TTLakes",Arial, sans-serif;
+    font-weight: 500;
+    color: #1B1C21;
+}
+
+.mobile-menu__phone{
+    width: 100%;
+    padding: 6px 0px 20px 0px;
+    font-size: 24px;
+    font-family: "TTLakes",Arial, sans-serif;
+    font-weight: 700;
+    color: #1B1C21;
+}
+
+.language-group{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    gap: 7px;
+}
+
+.language-group__element{
+    font-size: 16px;
+    font-family: "TTLakes",Arial, sans-serif;
+    font-weight: 500;
+    color: #1B1C21;
+}
+
+.language-group__element--active{
+    color: #7E7E82;
+}
+
+.menu-header__button,
+.button-group__element {
+  transition: transform 0.2s ease;
+}
+
+.menu-header__button:hover,
+.button-group__element:hover {
+  transform: scale(1.5);
+}
