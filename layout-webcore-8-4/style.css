@@ -1,0 +1,164 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: url(./assets/TTLakes/TTLakes-Regular.ttf) format(opentype);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.services {
+  border-top: 1px solid #d9fff5;
+}
+
+.services-header {
+  margin: 0;
+  padding: 16px;
+  font-family: "TTLakes", Arial, sans-serif;
+  font-size: 16px;
+  color: #7e7e82;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.swiper {
+  width: 100%;
+  padding: 16px 16px 32px;
+}
+
+.swiper-slide {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  height: 72px;
+  width: 240px;
+}
+
+.services-toggle {
+  display: none;
+  margin: 14px;
+  font-family: "TTLakes", Arial, sans-serif;
+  size: 16px;
+  border: none;
+  background: none;
+}
+
+.service-toggle__icon {
+  transition: transform 0.3s ease;
+}
+
+.services--expanded .service-toggle__icon {
+  transform: rotate(180deg);
+}
+
+.brand-logo {
+  display: block;
+  height: 32px;
+  max-width: 100%;
+  max-height: 32px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  min-width: 0;
+}
+
+.brand-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex: 0 0 40px;
+  padding: 0;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #dddddd;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 224px);
+    column-gap: 24px;
+    row-gap: 16px;
+  }
+
+  .swiper-slide {
+    width: auto;
+  }
+
+  .swiper-slide:nth-child(n + 7) {
+  display: none;
+}
+
+  .services--expanded .swiper-slide:nth-child(n + 7) {
+    display: flex;
+  }
+
+  .services-toggle{
+    display: flex;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 224px);
+    column-gap: 24px;
+    row-gap: 16px;
+  }
+
+  .swiper-slide {
+    width: auto;
+  }
+
+  .swiper-slide:nth-child(n + 9) {
+    display: none;
+  }
+
+  .services--expanded .swiper-slide:nth-child(n + 9) {
+    display: flex;
+  }
+
+  .services-toggle{
+    display: flex;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
